@@ -49,7 +49,7 @@ if human_years < 3:
   dog_years = human_years * 10
 else:
   dog_years = 20 + (human_years - 2) * 7
-print(f"The dog's age in dog years is {dog_years}")
+print("The dog's age in dog years is, ", dog_years)
 
 
 # exercise-04 What kind of Triangle?
@@ -73,11 +73,11 @@ print(f"The dog's age in dog years is {dog_years}")
 # c = int(input('c: '))
 
 if a == b and b == c:
-  print(f'A triangle with sides of {a}, {b} & {c} is an equalateral triangle')
+  print('A triangle with sides of ',a, b, c, ' is an equalateral triangle')
 elif a != b and a != c and b != c:
-  print(f'A triangle with sides of {a}, {b} & {c} is a scalene triangle')
+  print('A triangle with sides of ',a, b, c, ' is a scalene triangle')
 else:
-  print(f'A triangle with sides of {a}, {b} & {c} is an isosceles triangle')
+  print('A triangle with sides of ',a, b, c, ' is an isosceles triangle')
 
 
 
@@ -102,10 +102,10 @@ a = 0
 b = 1
 while term < 50:
   if term < 2:
-    print(f'term: {term} / number: {term}')
+    print('term: ', term / 'number: ', term)
   else:
     num = a + b
-    print(f'term: {term} / number: {num}')
+    print('term: ',term / 'number: ',num')
     a = b
     b = num
   term += 1
@@ -134,23 +134,23 @@ while term < 50:
 # After setting the likely season, you can use another if...elif...else statement to "adjust" if
 # the day number falls within a certain range.
 
-mo = input('Enter the month of the season (Jan - Dec): ')
+month = input('Enter the month of the season (Jan - Dec): ')
 day = int(input('Enter the day of the month: '))
-if mo in ('Jan', 'Feb', 'Mar'):
+if month in ('Jan', 'Feb', 'Mar'):
   season = 'Winter'
-elif mo in ('Apr', 'May', 'Jun'):
+elif month in ('Apr', 'May', 'Jun'):
   season = 'Spring'
-elif mo in ('Jul', 'Aug', 'Sep'):
+elif month in ('Jul', 'Aug', 'Sep'):
   season = 'Summer'
 else:
   season = 'Fall'
-if mo == 'Mar' and day > 19:
+if month == 'Mar' and day > 19:
   season = 'Spring'
-elif mo == 'Jun' and day > 20:
+elif month == 'Jun' and day > 20:
   season = 'Summer'
-elif mo == 'Sep' and day > 21:
+elif month == 'Sep' and day > 21:
   season = 'Fall'
-elif mo == 'Dec' and day > 20:
+elif month == 'Dec' and day > 20:
   season = 'Winter'
-print(f'{mo} {day} is in {season}')
+print(month, day 'is in ',season)
 
